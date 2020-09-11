@@ -34,8 +34,9 @@ p {
 
 .container {
     background-color: white;
-    width: 1440px;
-    margin: 200px;
+    width: 100%;
+    max-width: 1280px;
+    margin: 200px auto;
     border-radius: 20px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1), -5px -5px 15px rgba(0, 0, 0, 0.1);
     
@@ -78,7 +79,6 @@ p {
     height: 100%;
 }
 .person-share {
-    margin-left: 200px;
     padding: 20px;
     background:  hsl(210, 46%, 95%) ;
     border-radius: 50%;
