@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    line-height: 1.8em;
+    background-color: hsl(210, 46%, 95%);
+}
+
+h1, h3 {
+    color: hsl(217, 19%, 35%);
+    
+}
+h1 {
+    line-height: 1.2em;
+}
+h3 {
+    font-size: 24px;
+}
+
+p {
+    color:  hsl(212, 23%, 69%);
+    font-size:23px;
+    padding-top: 13px;
+    line-height: 1.4em;
+}
+
+.head {
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    width: 1440px;
+    margin: 200px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1), -5px -5px 15px rgba(0, 0, 0, 0.1);
+    
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+.content-img img{
+    height: auto;
+    width: 600px;
+}
+
+
+.content-text {
+    padding: 10px 80px 10px 50px;
+}
+
+.person {
+    padding-top: 90px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.person-img {
+    overflow: hidden ;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+.person-img img {
+    width: 100%;
+    height: 100%;
+}
+.person-share {
+    margin-left: 200px;
+    padding: 20px;
+    background:  hsl(210, 46%, 95%) ;
+    border-radius: 50%;
+    
+}
+
+.person-share:hover {
+    background: #6E8098;
+    cursor: pointer;
+}
+.person-share:hover .svg-path {
+    fill: white;
+}
+
+
+@media only screen and (max-width: 768px){
+    h1 {
+        font-size: 22px;
+    }   
+    h3 {
+        font-size: 16px;
+    }
+    p {
+        font-size: 16px;
+    }
+    .container {
+        width: 90%;
+        margin: 80px auto;
+    }
+    .content {
+        display: block;
+    }
+    .content-img img {
+        width: 100%;
+        height: 300px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;   
+    }
+    .content-text {
+        padding: 60px 20px 50px;
+    }
+
+    .person {
+        padding-top: 30px;
+    }
+    
+    .person-img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .person-text {
+        padding: 0;
+    }
+    .person-text p {
+        padding-top: 0;
+    }
+
+    .person-share {
+        margin: 0;
+    }
+}
