@@ -176,7 +176,7 @@ p {
     }
 
     .con {
-        display: flex;
+        display: none;
         align-items: center;
         justify-content: space-between;
         background: hsl(217, 19%, 35%);
@@ -187,7 +187,7 @@ p {
         bottom: 0;
         left: 0;
         width: 100%;     
-        opacity: 0;   
+        transition: all 500ms ease-in-out;
     }
         
     .con p {
