@@ -95,21 +95,21 @@ p {
 }
 
 .socials {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: space-between;
     background: hsl(217, 19%, 35%);
     border-radius: 10px;
     position: absolute;
-    bottom: 110px;
+    bottom: 90px;
     right: -120px;
     padding: 30px 50px;
 }
-.person::before {
+.socials::before {
     content: '';
     position: absolute;
-    bottom: 94px;
-    right: 23px;
+    bottom: -16px;
+    right: 135px;
     height: 30px;
     width: 30px;
     transform: rotate(45deg);
@@ -125,6 +125,15 @@ p {
     font-size: 0.99em;
 }
 
+.con {
+    display: none;
+}
+#showCase{
+    display: none;
+}
+#showCaseDesk{
+    display: block;
+}
 @media only screen and (max-width: 768px){
     h1 {
         font-size: 22px;
@@ -171,6 +180,7 @@ p {
     .person-share {
         margin: 0;
     }
+    
     .socials {
         display: none;
     }
@@ -199,7 +209,7 @@ p {
     .s-icons {
         padding-right: 5px;
     }
-    .person::before {
+    .socials::before {
         content: '';
         bottom: 0;
         right: 0;
@@ -207,3 +217,10 @@ p {
         width: 100%;
         background: hsl(217, 19%, 35%);
     }
+    #showCase{
+        display: block;
+    }
+    #showCaseDesk{
+        display: none;
+    }
+}
